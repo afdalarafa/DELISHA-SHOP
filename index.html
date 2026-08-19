@@ -4,11 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Delisha Shop - Fashion Terjangkau</title>
+<title>Delisha Shop — Fashion Terjangkau</title>
 
-<meta name="description" content="Delisha Shop menyediakan fashion wanita, pria, anak dan jelbab dengan harga terjangkau.">
+<meta name="description" content="Delisha Shop menyediakan fashion wanita, pria, anak dan jelbab dengan harga bersahabat.">
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{
+  --wine:#8d1237;
+  --rose:#c43c62;
+  --gold:#c99a3d;
+  --cream:#fff8ef;
+  --ink:#30242a;
+}
+
 *{
   box-sizing:border-box;
 }
@@ -19,9 +29,9 @@ html{
 
 body{
   margin:0;
-  font-family:Arial,sans-serif;
-  background:#fff8ef;
-  color:#30242a;
+  font-family:"DM Sans",Arial,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
 }
 
 a{
@@ -29,21 +39,25 @@ a{
   color:inherit;
 }
 
+/* TOP BAR */
 .topbar{
-  background:#8d1237;
+  background:var(--wine);
   color:white;
   padding:10px 6%;
+  font-size:13px;
   display:flex;
   justify-content:space-between;
+  gap:20px;
   flex-wrap:wrap;
-  font-size:14px;
 }
 
+/* NAVBAR */
 nav{
   position:sticky;
   top:0;
   z-index:10;
-  background:#fff8ef;
+  background:rgba(255,248,239,.97);
+  backdrop-filter:blur(10px);
   border-bottom:1px solid #ead8c9;
   padding:10px 6%;
   display:flex;
@@ -55,8 +69,8 @@ nav{
   display:flex;
   align-items:center;
   gap:12px;
-  color:#8d1237;
-  font-weight:bold;
+  font-weight:800;
+  color:var(--wine);
 }
 
 .brand img{
@@ -67,67 +81,72 @@ nav{
 }
 
 .brand span{
+  font-family:"Playfair Display";
   font-size:24px;
 }
 
-.links{
+nav .links{
   display:flex;
-  gap:25px;
-  font-weight:bold;
+  gap:24px;
+  font-weight:600;
+  font-size:14px;
 }
 
 .links a:hover{
-  color:#c43c62;
+  color:var(--rose);
 }
 
+/* HERO */
 .hero{
-  padding:25px 6%;
+  padding:28px 6% 20px;
 }
 
 .hero img{
   width:100%;
+  display:block;
   max-height:590px;
   object-fit:cover;
-  display:block;
+  object-position:center;
   border-radius:24px;
-  box-shadow:0 15px 40px rgba(80,30,40,.15);
+  box-shadow:0 20px 50px rgba(93,36,49,.16);
 }
 
+/* SECTION */
 .section{
   padding:60px 6%;
 }
 
 .section-head{
   text-align:center;
-  max-width:800px;
-  margin:0 auto 35px;
+  max-width:760px;
+  margin:0 auto 34px;
 }
 
 .eyebrow{
-  color:#c43c62;
-  font-weight:bold;
+  color:var(--rose);
+  font-weight:800;
   letter-spacing:2px;
-  font-size:13px;
+  font-size:12px;
   text-transform:uppercase;
 }
 
-h2{
-  color:#8d1237;
-  font-size:38px;
-  margin:10px 0;
+.section h2{
+  font-family:"Playfair Display";
+  font-size:40px;
+  margin:8px 0 10px;
+  color:var(--wine);
 }
 
-.section-head p{
+.section p{
   color:#725f65;
   line-height:1.7;
 }
 
-/* PRODUK */
-
+/* PRODUCTS */
 .products{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:25px;
+  gap:22px;
 }
 
 .card{
@@ -135,16 +154,16 @@ h2{
   border:1px solid #eaded6;
   border-radius:20px;
   overflow:hidden;
-  box-shadow:0 8px 25px rgba(69,39,46,.08);
-  transition:.3s;
+  box-shadow:0 10px 28px rgba(69,39,46,.07);
+  transition:.25s;
 }
 
 .card:hover{
   transform:translateY(-5px);
+  box-shadow:0 18px 38px rgba(69,39,46,.13);
 }
 
 .pic{
-  width:100%;
   aspect-ratio:4/3;
   overflow:hidden;
   background:#f5eee9;
@@ -155,54 +174,59 @@ h2{
   height:100%;
   object-fit:cover;
   display:block;
+  transition:.4s;
+}
+
+.card:hover .pic img{
+  transform:scale(1.04);
 }
 
 .info{
-  padding:20px;
+  padding:18px;
 }
 
 .tag{
-  color:#c43c62;
-  font-size:12px;
-  font-weight:bold;
+  font-size:11px;
+  color:var(--rose);
+  font-weight:800;
   text-transform:uppercase;
+  letter-spacing:1px;
 }
 
 .info h3{
-  margin:8px 0;
-  font-size:20px;
+  margin:7px 0;
+  font-size:19px;
 }
 
 .price{
-  color:#8d1237;
+  color:var(--wine);
   font-size:22px;
-  font-weight:bold;
-  margin:10px 0 15px;
+  font-weight:800;
+  margin:8px 0 14px;
 }
 
 .order{
   display:block;
   text-align:center;
-  background:#8d1237;
+  background:var(--wine);
   color:white;
-  padding:12px;
+  padding:11px 14px;
   border-radius:12px;
-  font-weight:bold;
+  font-weight:700;
 }
 
 .order:hover{
   background:#6d0e2a;
 }
 
-/* TENTANG */
-
+/* ABOUT */
 .about{
   background:linear-gradient(135deg,#fff 0%,#f9e9e6 100%);
 }
 
 .about-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1.05fr .95fr;
   gap:40px;
   align-items:center;
 }
@@ -210,6 +234,7 @@ h2{
 .about img{
   width:100%;
   border-radius:24px;
+  box-shadow:0 18px 40px rgba(80,30,40,.12);
 }
 
 .chips{
@@ -220,18 +245,18 @@ h2{
 }
 
 .chip{
-  padding:9px 14px;
-  border-radius:30px;
+  padding:9px 13px;
+  border-radius:999px;
   background:white;
   border:1px solid #e7cfc6;
-  color:#8d1237;
-  font-weight:bold;
+  color:var(--wine);
+  font-weight:700;
+  font-size:13px;
 }
 
-/* KONTAK */
-
+/* CONTACT */
 .contact{
-  background:#8d1237;
+  background:var(--wine);
   color:white;
   text-align:center;
 }
@@ -249,28 +274,35 @@ h2{
   justify-content:center;
   flex-wrap:wrap;
   gap:12px;
-  margin-top:25px;
+  margin-top:22px;
 }
 
 .social a{
   background:white;
-  color:#8d1237;
+  color:var(--wine);
   padding:12px 16px;
   border-radius:12px;
-  font-weight:bold;
+  font-weight:700;
+  transition:.2s;
+  box-shadow:0 6px 18px rgba(0,0,0,.12);
 }
 
+.social a:hover{
+  transform:translateY(-3px);
+  background:#fff3e8;
+}
+
+/* FOOTER */
 footer{
   background:#550b22;
   color:#f8dfe5;
   text-align:center;
-  padding:22px;
+  padding:22px 6%;
   font-size:13px;
 }
 
-/* HP */
-
-@media(max-width:900px){
+/* MOBILE */
+@media(max-width:950px){
 
   .products{
     grid-template-columns:repeat(2,1fr);
@@ -280,47 +312,54 @@ footer{
     grid-template-columns:1fr;
   }
 
+  .links{
+    display:none!important;
+  }
 }
 
-@media(max-width:600px){
+@media(max-width:560px){
 
   .topbar{
     justify-content:center;
     text-align:center;
-    gap:5px;
-  }
-
-  .links{
-    display:none;
   }
 
   .hero{
-    padding:15px 3%;
+    padding:14px 3%;
+  }
+
+  .hero img{
+    border-radius:16px;
   }
 
   .section{
     padding:45px 4%;
   }
 
-  h2{
-    font-size:30px;
+  .section h2{
+    font-size:32px;
   }
 
   .products{
     grid-template-columns:1fr;
   }
 
+  .brand span{
+    font-size:20px;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
 <div class="topbar">
   <span>✨ Belanja Hemat, Tampil Keren!</span>
-  <span>Harga Bersahabat • Mulai Rp25.000</span>
+  <span>Harga bersahabat & terjangkau • Mulai Rp25.000</span>
 </div>
 
+<!-- NAVBAR -->
 <nav>
 
   <a class="brand" href="#home">
@@ -339,331 +378,373 @@ footer{
 
 <main id="home">
 
+<!-- HERO -->
 <section class="hero">
   <img src="koleksi-delisha.png" alt="Koleksi Delisha Shop">
 </section>
 
 
+<!-- PRODUK -->
 <section class="section" id="koleksi">
 
-<div class="section-head">
+  <div class="section-head">
 
-  <div class="eyebrow">
-    Koleksi Delisha Shop
-  </div>
-
-  <h2>
-    Produk Pilihan
-  </h2>
-
-  <p>
-    Pilihan fashion wanita, pria dan anak dengan harga
-    bersahabat dan terjangkau.
-  </p>
-
-</div>
-
-
-<div class="products">
-
-
-<!-- KAOS WANITA -->
-
-<article class="card">
-
-  <div class="pic">
-    <img src="kaos-wanita.png" alt="Kaos Wanita">
-  </div>
-
-  <div class="info">
-
-    <div class="tag">
-      Wanita
+    <div class="eyebrow">
+      Koleksi Delisha Shop
     </div>
 
-    <h3>
-      Kaos Wanita
-    </h3>
+    <h2>
+      Produk Pilihan
+    </h2>
 
-    <div class="price">
-      Rp45.000
-    </div>
-
-    <a class="order"
-       href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20memesan%20Kaos%20Wanita."
-       target="_blank">
-       Pesan via WhatsApp
-    </a>
+    <p>
+      Pilihan pakaian wanita, pria, anak dan jelbab
+      dengan harga bersahabat dan terjangkau.
+      Pesan langsung melalui WhatsApp.
+    </p>
 
   </div>
 
-</article>
+
+  <div class="products">
 
 
-<!-- KAOS PRIA -->
+    <!-- KAOS WANITA -->
+    <article class="card">
 
-<article class="card">
+      <div class="pic">
+        <img src="kaos-wanita.png"
+             alt="Baju Kaos Wanita">
+      </div>
 
-  <div class="pic">
-    <img src="kaos-pria.png" alt="Kaos Pria">
+      <div class="info">
+
+        <div class="tag">
+          Wanita
+        </div>
+
+        <h3>
+          Baju Kaos Wanita
+        </h3>
+
+        <div class="price">
+          Rp45.000
+        </div>
+
+        <a class="order"
+           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Baju%20Kaos%20Wanita%20Rp45.000."
+           target="_blank">
+          💬 Pesan
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- JELBAB -->
+    <article class="card">
+
+      <div class="pic">
+        <img src="jelbab.png"
+             alt="Jelbab">
+      </div>
+
+      <div class="info">
+
+        <div class="tag">
+          Wanita
+        </div>
+
+        <h3>
+          Jelbab
+        </h3>
+
+        <div class="price">
+          Rp25.000
+        </div>
+
+        <a class="order"
+           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Jelbab%20Rp25.000."
+           target="_blank">
+          💬 Pesan
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- KAOS PRIA -->
+    <article class="card">
+
+      <div class="pic">
+        <img src="kaos-pria.png"
+             alt="Baju Kaos Pria">
+      </div>
+
+      <div class="info">
+
+        <div class="tag">
+          Pria
+        </div>
+
+        <h3>
+          Baju Kaos Pria
+        </h3>
+
+        <div class="price">
+          Rp40.000
+        </div>
+
+        <a class="order"
+           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Baju%20Kaos%20Pria%20Rp40.000."
+           target="_blank">
+          💬 Pesan
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- KEMEJA PRIA -->
+    <article class="card">
+
+      <div class="pic">
+        <img src="kemeja-pria.png"
+             alt="Kemeja Pria">
+      </div>
+
+      <div class="info">
+
+        <div class="tag">
+          Pria
+        </div>
+
+        <h3>
+          Kemeja Pria
+        </h3>
+
+        <div class="price">
+          Rp75.000
+        </div>
+
+        <a class="order"
+           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Kemeja%20Pria%20Rp75.000."
+           target="_blank">
+          💬 Pesan
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ANAK PEREMPUAN -->
+    <article class="card">
+
+      <div class="pic">
+        <img src="anak-perempuan.png"
+             alt="Baju Anak Perempuan">
+      </div>
+
+      <div class="info">
+
+        <div class="tag">
+          Anak
+        </div>
+
+        <h3>
+          Baju Anak Perempuan
+        </h3>
+
+        <div class="price">
+          Rp55.000
+        </div>
+
+        <a class="order"
+           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Baju%20Anak%20Perempuan%20Rp55.000."
+           target="_blank">
+          💬 Pesan
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ANAK LAKI-LAKI -->
+    <article class="card">
+
+      <div class="pic">
+        <img src="anak-laki-laki.png"
+             alt="Baju Anak Laki-Laki">
+      </div>
+
+      <div class="info">
+
+        <div class="tag">
+          Anak
+        </div>
+
+        <h3>
+          Baju Anak Laki-Laki
+        </h3>
+
+        <div class="price">
+          Rp50.000
+        </div>
+
+        <a class="order"
+           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Baju%20Anak%20Laki-Laki%20Rp50.000."
+           target="_blank">
+          💬 Pesan
+        </a>
+
+      </div>
+
+    </article>
+
+
   </div>
 
-  <div class="info">
-
-    <div class="tag">
-      Pria
-    </div>
-
-    <h3>
-      Kaos Pria
-    </h3>
-
-    <div class="price">
-      Rp40.000
-    </div>
-
-    <a class="order"
-       href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20memesan%20Kaos%20Pria."
-       target="_blank">
-       Pesan via WhatsApp
-    </a>
-
-  </div>
-
-</article>
-
-
-<!-- KEMEJA PRIA -->
-
-<article class="card">
-
-  <div class="pic">
-    <img src="kemeja-pria.png" alt="Kemeja Pria">
-  </div>
-
-  <div class="info">
-
-    <div class="tag">
-      Pria
-    </div>
-
-    <h3>
-      Kemeja Pria
-    </h3>
-
-    <div class="price">
-      Rp75.000
-    </div>
-
-    <a class="order"
-       href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20memesan%20Kemeja%20Pria."
-       target="_blank">
-       Pesan via WhatsApp
-    </a>
-
-  </div>
-
-</article>
-
-
-<!-- ANAK PEREMPUAN -->
-
-<article class="card">
-
-  <div class="pic">
-    <img src="anak-perempuan.png" alt="Baju Anak Perempuan">
-  </div>
-
-  <div class="info">
-
-    <div class="tag">
-      Anak Perempuan
-    </div>
-
-    <h3>
-      Baju Anak Perempuan
-    </h3>
-
-    <div class="price">
-      Rp55.000
-    </div>
-
-    <a class="order"
-       href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20memesan%20Baju%20Anak%20Perempuan."
-       target="_blank">
-       Pesan via WhatsApp
-    </a>
-
-  </div>
-
-</article>
-
-
-<!-- ANAK LAKI-LAKI -->
-
-<article class="card">
-
-  <div class="pic">
-    <img src="anak-laki-laki.png" alt="Baju Anak Laki-laki">
-  </div>
-
-  <div class="info">
-
-    <div class="tag">
-      Anak Laki-laki
-    </div>
-
-    <h3>
-      Baju Anak Laki-laki
-    </h3>
-
-    <div class="price">
-      Rp50.000
-    </div>
-
-    <a class="order"
-       href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20memesan%20Baju%20Anak%20Laki-laki."
-       target="_blank">
-       Pesan via WhatsApp
-    </a>
-
-  </div>
-
-</article>
-
-
-<!-- JELBAB -->
-
-<article class="card">
-
-  <div class="pic">
-    <img src="jelbab.png" alt="Jelbab">
-  </div>
-
-  <div class="info">
-
-    <div class="tag">
-      Wanita
-    </div>
-
-    <h3>
-      Jelbab
-    </h3>
-
-    <div class="price">
-      Rp25.000
-    </div>
-
-    <a class="order"
-       href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20memesan%20Jelbab."
-       target="_blank">
-       Pesan via WhatsApp
-    </a>
-
-  </div>
-
-</article>
-
-
-</div>
 </section>
 
 
 <!-- TENTANG -->
-
 <section class="section about" id="tentang">
 
-<div class="about-grid">
+  <div class="about-grid">
 
-  <img src="koleksi-delisha.png" alt="Delisha Shop">
+    <img src="koleksi-delisha.png"
+         alt="Delisha Shop">
 
-  <div>
+    <div>
 
-    <div class="eyebrow">
-      Tentang Delisha Shop
-    </div>
+      <div class="eyebrow">
+        Tentang Delisha Shop
+      </div>
 
-    <h2>
-      Fashion Bersahabat Untuk Keluarga
-    </h2>
+      <h2>
+        Fashion Bersahabat Untuk Keluarga
+      </h2>
 
-    <p>
-      Delisha Shop menyediakan berbagai pilihan fashion
-      wanita, pria dan anak dengan harga terjangkau.
-      Kami melayani pemesanan secara online melalui WhatsApp
-      dan pembelian secara langsung.
-    </p>
+      <p>
+        Delisha Shop menyediakan pilihan fashion
+        wanita, pria dan anak serta jelbab.
+        Kami berusaha memberikan produk dengan
+        harga bersahabat dan pelayanan yang ramah.
+      </p>
 
-    <div class="chips">
+      <div class="chips">
 
-      <span class="chip">Fashion Wanita</span>
-      <span class="chip">Fashion Pria</span>
-      <span class="chip">Fashion Anak</span>
-      <span class="chip">Jelbab</span>
-      <span class="chip">Mulai 25K</span>
+        <span class="chip">
+          Fashion Pria
+        </span>
+
+        <span class="chip">
+          Fashion Wanita
+        </span>
+
+        <span class="chip">
+          Fashion Anak
+        </span>
+
+        <span class="chip">
+          Jelbab
+        </span>
+
+        <span class="chip">
+          Mulai 25K
+        </span>
+
+      </div>
 
     </div>
 
   </div>
-
-</div>
 
 </section>
 
 
 <!-- KONTAK -->
-
 <section class="section contact" id="kontak">
 
-<div class="section-head">
+  <div class="section-head">
 
-  <div class="eyebrow" style="color:#f3c36d">
-    Hubungi Kami
+    <div class="eyebrow"
+         style="color:#f3c36d">
+      Hubungi Kami
+    </div>
+
+    <h2>
+      Online dan Langsung
+    </h2>
+
+    <p>
+      Silakan hubungi Delisha Shop untuk
+      tanya stok, ukuran, warna dan pemesanan.
+    </p>
+
+
+    <div class="social">
+
+      <!-- WHATSAPP 1 -->
+      <a href="https://wa.me/6282172762013"
+         target="_blank">
+        💬 WhatsApp 082172762013
+      </a>
+
+
+      <!-- WHATSAPP 2 -->
+      <a href="https://wa.me/6283155431452"
+         target="_blank">
+        💬 WhatsApp 083155431452
+      </a>
+
+
+      <!-- INSTAGRAM -->
+      <a href="https://www.instagram.com/afdal_arafa/"
+         target="_blank">
+        📸 Instagram @afdal_arafa
+      </a>
+
+
+      <!-- TIKTOK -->
+      <a href="https://www.tiktok.com/@afdal.arafa"
+         target="_blank">
+        🎵 TikTok @afdal.arafa
+      </a>
+
+
+      <!-- TIKTOK CICI -->
+      <a href="https://www.tiktok.com/search?q=cici.andriani"
+         target="_blank">
+        🎵 TikTok @cici.andriani
+      </a>
+
+
+      <!-- FACEBOOK -->
+      <a href="https://www.facebook.com/share/1DU4Lg5MdB/"
+         target="_blank">
+        🔵 Facebook Afdal Arafa
+      </a>
+
+    </div>
+
   </div>
-
-  <h2>
-    Pesan Sekarang
-  </h2>
-
-  <p>
-    Silakan hubungi Delisha Shop untuk mengetahui
-    stok, ukuran, warna dan melakukan pemesanan.
-  </p>
-
-
-  <div class="social">
-
-    <a href="https://wa.me/6282172762013"
-       target="_blank">
-       💬 WhatsApp 082172762013
-    </a>
-
-    <a href="https://wa.me/6283155431452"
-       target="_blank">
-       💬 WhatsApp 083155431452
-    </a>
-
-    <a href="https://www.instagram.com/afdal_arafa/"
-       target="_blank">
-       📸 Instagram @afdal_arafa
-    </a>
-
-    <a href="https://www.tiktok.com/@afdal.arafa"
-       target="_blank">
-       🎵 TikTok @afdal.arafa
-    </a>
-
-  </div>
-
-</div>
 
 </section>
 
 </main>
 
 
+<!-- FOOTER -->
 <footer>
-© 2026 Delisha Shop • Harga Bersahabat dan Terjangkau
+  © 2026 Delisha Shop •
+  Harga Bersahabat dan Terjangkau •
+  Online dan Langsung
 </footer>
 
 </body>
