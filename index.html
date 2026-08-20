@@ -6,746 +6,1105 @@
 
 <title>Delisha Shop — Fashion Terjangkau</title>
 
-<meta name="description" content="Delisha Shop menyediakan fashion wanita, pria, anak dan jelbab dengan harga bersahabat.">
+<meta name="description"
+content="Delisha Shop menyediakan fashion wanita, pria dan anak dengan harga bersahabat.">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
 
 :root{
-  --wine:#8d1237;
-  --rose:#c43c62;
-  --gold:#c99a3d;
-  --cream:#fff8ef;
-  --ink:#30242a;
+--wine:#8d1237;
+--rose:#d62d67;
+--pink:#f21870;
+--gold:#c99a3d;
+--cream:#fff8ef;
+--ink:#30242a;
+--soft:#f7eee9;
+--white:#ffffff;
 }
 
 *{
-  box-sizing:border-box;
+box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-  margin:0;
-  font-family:"DM Sans",Arial,sans-serif;
-  color:var(--ink);
-  background:var(--cream);
+margin:0;
+font-family:"DM Sans",Arial,sans-serif;
+color:var(--ink);
+background:var(--cream);
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+text-decoration:none;
+color:inherit;
 }
 
 /* TOP BAR */
+
 .topbar{
-  background:var(--wine);
-  color:white;
-  padding:10px 6%;
-  font-size:13px;
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  flex-wrap:wrap;
+background:var(--wine);
+color:white;
+padding:10px 6%;
+font-size:13px;
+display:flex;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap;
 }
 
 /* NAVBAR */
+
 nav{
-  position:sticky;
-  top:0;
-  z-index:10;
-  background:rgba(255,248,239,.97);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid #ead8c9;
-  padding:10px 6%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+position:sticky;
+top:0;
+z-index:100;
+background:rgba(255,248,239,.96);
+backdrop-filter:blur(10px);
+border-bottom:1px solid #ead8c9;
+padding:10px 6%;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 .brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  font-weight:800;
-  color:var(--wine);
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:800;
+color:var(--wine);
 }
 
 .brand img{
-  width:52px;
-  height:52px;
-  object-fit:cover;
-  border-radius:14px;
+width:52px;
+height:52px;
+object-fit:cover;
+border-radius:14px;
 }
 
 .brand span{
-  font-family:"Playfair Display";
-  font-size:24px;
+font-family:"Playfair Display";
+font-size:24px;
 }
 
 nav .links{
-  display:flex;
-  gap:24px;
-  font-weight:600;
-  font-size:14px;
+display:flex;
+gap:22px;
+font-weight:700;
+font-size:14px;
 }
 
 .links a:hover{
-  color:var(--rose);
+color:var(--rose);
 }
 
 /* HERO */
+
 .hero{
-  padding:28px 6% 20px;
+padding:28px 6% 20px;
 }
 
 .hero img{
-  width:100%;
-  display:block;
-  max-height:590px;
-  object-fit:cover;
-  object-position:center;
-  border-radius:24px;
-  box-shadow:0 20px 50px rgba(93,36,49,.16);
+width:100%;
+display:block;
+max-height:620px;
+object-fit:cover;
+object-position:center;
+border-radius:24px;
+box-shadow:0 20px 50px rgba(93,36,49,.16);
 }
 
 /* SECTION */
+
 .section{
-  padding:60px 6%;
+padding:60px 6%;
 }
 
 .section-head{
-  text-align:center;
-  max-width:760px;
-  margin:0 auto 34px;
+text-align:center;
+max-width:760px;
+margin:0 auto 34px;
 }
 
 .eyebrow{
-  color:var(--rose);
-  font-weight:800;
-  letter-spacing:2px;
-  font-size:12px;
-  text-transform:uppercase;
+color:var(--rose);
+font-weight:800;
+letter-spacing:2px;
+font-size:12px;
+text-transform:uppercase;
 }
 
 .section h2{
-  font-family:"Playfair Display";
-  font-size:40px;
-  margin:8px 0 10px;
-  color:var(--wine);
+font-family:"Playfair Display";
+font-size:40px;
+margin:8px 0 10px;
+color:var(--wine);
 }
 
 .section p{
-  color:#725f65;
-  line-height:1.7;
+color:#725f65;
+line-height:1.7;
 }
 
-/* PRODUCTS */
+/* PRODUK */
+
 .products{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:22px;
 }
 
 .card{
-  background:white;
-  border:1px solid #eaded6;
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:0 10px 28px rgba(69,39,46,.07);
-  transition:.25s;
+background:white;
+border:1px solid #eaded6;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 28px rgba(69,39,46,.07);
+transition:.25s;
 }
 
 .card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 18px 38px rgba(69,39,46,.13);
+transform:translateY(-5px);
+box-shadow:0 18px 38px rgba(69,39,46,.13);
 }
 
 .pic{
-  aspect-ratio:4/3;
-  overflow:hidden;
-  background:#f5eee9;
+aspect-ratio:4/3;
+overflow:hidden;
+background:#f5eee9;
 }
 
 .pic img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:.4s;
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+transition:.4s;
 }
 
 .card:hover .pic img{
-  transform:scale(1.04);
+transform:scale(1.04);
 }
 
 .info{
-  padding:18px;
+padding:18px;
 }
 
 .tag{
-  font-size:11px;
-  color:var(--rose);
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:1px;
+font-size:11px;
+color:var(--rose);
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:1px;
 }
 
 .info h3{
-  margin:7px 0;
-  font-size:19px;
+margin:7px 0;
+font-size:19px;
 }
 
 .price{
-  color:var(--wine);
-  font-size:22px;
-  font-weight:800;
-  margin:8px 0 14px;
+color:var(--wine);
+font-size:22px;
+font-weight:800;
+margin:8px 0 14px;
 }
 
 .order{
-  display:block;
-  text-align:center;
-  background:var(--wine);
-  color:white;
-  padding:11px 14px;
-  border-radius:12px;
-  font-weight:700;
+display:block;
+text-align:center;
+background:var(--wine);
+color:white;
+padding:11px 14px;
+border-radius:12px;
+font-weight:700;
 }
 
 .order:hover{
-  background:#6d0e2a;
+background:#6d0e2a;
 }
 
-/* ABOUT */
+/* TENTANG */
+
 .about{
-  background:linear-gradient(135deg,#fff 0%,#f9e9e6 100%);
+background:linear-gradient(135deg,#fff 0%,#f9e9e6 100%);
 }
 
 .about-grid{
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:40px;
-  align-items:center;
+display:grid;
+grid-template-columns:1.05fr .95fr;
+gap:40px;
+align-items:center;
 }
 
 .about img{
-  width:100%;
-  border-radius:24px;
-  box-shadow:0 18px 40px rgba(80,30,40,.12);
+width:100%;
+border-radius:24px;
+box-shadow:0 18px 40px rgba(80,30,40,.12);
 }
 
 .chips{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:20px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
 }
 
 .chip{
-  padding:9px 13px;
-  border-radius:999px;
-  background:white;
-  border:1px solid #e7cfc6;
-  color:var(--wine);
-  font-weight:700;
-  font-size:13px;
+padding:9px 13px;
+border-radius:999px;
+background:white;
+border:1px solid #e7cfc6;
+color:var(--wine);
+font-weight:700;
+font-size:13px;
 }
 
-/* CONTACT */
+/* KELUARGA */
+
+.family{
+background:white;
+}
+
+.family-photo{
+max-width:1000px;
+margin:auto;
+}
+
+.family-photo img{
+width:100%;
+display:block;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(70,20,40,.18);
+}
+
+/* PEMBAYARAN */
+
+.payment{
+background:linear-gradient(135deg,#fff0f6,#fff);
+}
+
+.qr-box{
+max-width:700px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:25px;
+box-shadow:0 15px 45px rgba(90,20,50,.15);
+text-align:center;
+}
+
+.qr-box img{
+width:100%;
+max-width:650px;
+height:auto;
+display:block;
+margin:auto;
+border-radius:15px;
+}
+
+.payment-title{
+font-family:"Playfair Display";
+font-size:32px;
+color:var(--wine);
+margin-bottom:10px;
+}
+
+/* LIKE SUBSCRIBE */
+
+.support{
+background:var(--wine);
+color:white;
+text-align:center;
+}
+
+.support h2{
+color:white;
+}
+
+.support p{
+color:#f9e5eb;
+}
+
+.support-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.support-btn{
+border:0;
+cursor:pointer;
+padding:15px 24px;
+border-radius:15px;
+font-size:16px;
+font-weight:800;
+transition:.2s;
+}
+
+.like-btn{
+background:white;
+color:#d7195b;
+}
+
+.subscribe-btn{
+background:#ff1744;
+color:white;
+}
+
+.support-btn:hover{
+transform:translateY(-3px) scale(1.02);
+}
+
+.like-count{
+margin-top:15px;
+font-size:14px;
+color:#ffe5ed;
+}
+
+/* SOSIAL */
+
 .contact{
-  background:var(--wine);
-  color:white;
-  text-align:center;
+background:var(--wine);
+color:white;
+text-align:center;
 }
 
 .contact h2{
-  color:white;
+color:white;
 }
 
 .contact p{
-  color:#f7e7e9;
+color:#f7e7e9;
 }
 
 .social{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:22px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px;
+margin-top:22px;
 }
 
 .social a{
-  background:white;
-  color:var(--wine);
-  padding:12px 16px;
-  border-radius:12px;
-  font-weight:700;
-  transition:.2s;
-  box-shadow:0 6px 18px rgba(0,0,0,.12);
+background:white;
+color:var(--wine);
+padding:12px 16px;
+border-radius:12px;
+font-weight:700;
+transition:.2s;
+box-shadow:0 6px 18px rgba(0,0,0,.12);
 }
 
 .social a:hover{
-  transform:translateY(-3px);
-  background:#fff3e8;
+transform:translateY(-3px);
+background:#fff3e8;
 }
 
 /* FOOTER */
+
 footer{
-  background:#550b22;
-  color:#f8dfe5;
-  text-align:center;
-  padding:22px 6%;
-  font-size:13px;
+background:#550b22;
+color:#f8dfe5;
+text-align:center;
+padding:22px 6%;
+font-size:13px;
 }
 
-/* MOBILE */
+/* FLOATING WHATSAPP */
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+z-index:999;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+font-weight:800;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.whatsapp:hover{
+transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+
 @media(max-width:950px){
 
-  .products{
-    grid-template-columns:repeat(2,1fr);
-  }
+.products{
+grid-template-columns:repeat(2,1fr);
+}
 
-  .about-grid{
-    grid-template-columns:1fr;
-  }
+.about-grid{
+grid-template-columns:1fr;
+}
 
-  .links{
-    display:none!important;
-  }
+.links{
+display:none!important;
+}
+
 }
 
 @media(max-width:560px){
 
-  .topbar{
-    justify-content:center;
-    text-align:center;
-  }
-
-  .hero{
-    padding:14px 3%;
-  }
-
-  .hero img{
-    border-radius:16px;
-  }
-
-  .section{
-    padding:45px 4%;
-  }
-
-  .section h2{
-    font-size:32px;
-  }
-
-  .products{
-    grid-template-columns:1fr;
-  }
-
-  .brand span{
-    font-size:20px;
-  }
+.topbar{
+justify-content:center;
+text-align:center;
 }
+
+.hero{
+padding:14px 3%;
+}
+
+.hero img{
+border-radius:16px;
+}
+
+.section{
+padding:45px 4%;
+}
+
+.section h2{
+font-size:32px;
+}
+
+.products{
+grid-template-columns:1fr;
+}
+
+.brand span{
+font-size:20px;
+}
+
+.qr-box{
+padding:10px;
+}
+
+.support-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.support-btn{
+width:90%;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <!-- TOP BAR -->
+
 <div class="topbar">
-  <span>✨ Belanja Hemat, Tampil Keren!</span>
-  <span>Harga bersahabat & terjangkau • Mulai Rp25.000</span>
+
+<span>✨ Belanja Hemat, Tampil Keren!</span>
+
+<span>
+Harga Bersahabat & Terjangkau • Mulai Rp25.000
+</span>
+
 </div>
 
+
 <!-- NAVBAR -->
+
 <nav>
 
-  <a class="brand" href="#home">
-    <img src="logo.png" alt="Logo Delisha Shop">
-    <span>Delisha Shop</span>
-  </a>
+<a class="brand" href="#home">
 
-  <div class="links">
-    <a href="#home">Beranda</a>
-    <a href="#koleksi">Koleksi</a>
-    <a href="#tentang">Tentang</a>
-    <a href="#kontak">Kontak</a>
-  </div>
+<img src="assets/logo.png"
+alt="Logo Delisha Shop">
+
+<span>Delisha Shop</span>
+
+</a>
+
+<div class="links">
+
+<a href="#home">Beranda</a>
+
+<a href="#koleksi">Koleksi</a>
+
+<a href="#tentang">Tentang</a>
+
+<a href="#keluarga">Keluarga</a>
+
+<a href="#pembayaran">Pembayaran</a>
+
+<a href="#dukungan">Dukungan</a>
+
+<a href="#kontak">Kontak</a>
+
+</div>
 
 </nav>
 
+
 <main id="home">
 
+
 <!-- HERO -->
+
 <section class="hero">
-  <img src="koleksi-delisha.png" alt="Koleksi Delisha Shop">
+
+<img src="assets/koleksi-delisha.png"
+alt="Koleksi Delisha Shop">
+
 </section>
 
 
-<!-- PRODUK -->
+<!-- KOLEKSI -->
+
 <section class="section" id="koleksi">
 
-  <div class="section-head">
+<div class="section-head">
 
-    <div class="eyebrow">
-      Koleksi Delisha Shop
-    </div>
+<div class="eyebrow">
+Koleksi Delisha Shop
+</div>
 
-    <h2>
-      Produk Pilihan
-    </h2>
+<h2>
+Koleksi Fashion Delisha Shop
+</h2>
 
-    <p>
-      Pilihan pakaian wanita, pria, anak dan jelbab
-      dengan harga bersahabat dan terjangkau.
-      Pesan langsung melalui WhatsApp.
-    </p>
+<p>
+Pilihan fashion wanita, pria, dan anak dengan harga
+bersahabat dan terjangkau.
+Pesan langsung melalui WhatsApp.
+</p>
 
-  </div>
+</div>
 
 
-  <div class="products">
+<div class="products">
 
 
-    <!-- KAOS WANITA -->
-    <article class="card">
+<!-- WANITA -->
 
-      <div class="pic">
-        <img src="kaos-wanita.png"
-             alt="Baju Kaos Wanita">
-      </div>
+<article class="card">
 
-      <div class="info">
+<div class="pic">
 
-        <div class="tag">
-          Wanita
-        </div>
+<img src="assets/fashion-wanita.jpg"
+alt="Kaos Wanita dan Jelbab">
 
-        <h3>
-          Baju Kaos Wanita
-        </h3>
+</div>
 
-        <div class="price">
-          Rp45.000
-        </div>
+<div class="info">
 
-        <a class="order"
-           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Baju%20Kaos%20Wanita%20Rp45.000."
-           target="_blank">
-          💬 Pesan
-        </a>
+<div class="tag">
+Wanita
+</div>
 
-      </div>
+<h3>
+Kaos Wanita & Jelbab
+</h3>
 
-    </article>
+<div class="price">
+Rp45.000 – Rp35.000
+</div>
 
+<a class="order"
+href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20memesan%20Kaos%20Wanita%20atau%20Jelbab."
+target="_blank">
 
-    <!-- JELBAB -->
-    <article class="card">
+Pesan via WhatsApp
 
-      <div class="pic">
-        <img src="jelbab.png"
-             alt="Jelbab">
-      </div>
+</a>
 
-      <div class="info">
+</div>
 
-        <div class="tag">
-          Wanita
-        </div>
+</article>
 
-        <h3>
-          Jelbab
-        </h3>
 
-        <div class="price">
-          Rp25.000
-        </div>
+<!-- PRIA -->
 
-        <a class="order"
-           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Jelbab%20Rp25.000."
-           target="_blank">
-          💬 Pesan
-        </a>
+<article class="card">
 
-      </div>
+<div class="pic">
 
-    </article>
+<img src="assets/fashion-pria.jpg"
+alt="Kaos Pria dan Kemeja Pria">
 
+</div>
 
-    <!-- KAOS PRIA -->
-    <article class="card">
+<div class="info">
 
-      <div class="pic">
-        <img src="kaos-pria.png"
-             alt="Baju Kaos Pria">
-      </div>
+<div class="tag">
+Pria
+</div>
 
-      <div class="info">
+<h3>
+Kaos Pria & Kemeja Pria
+</h3>
 
-        <div class="tag">
-          Pria
-        </div>
+<div class="price">
+Rp40.000 – Rp75.000
+</div>
 
-        <h3>
-          Baju Kaos Pria
-        </h3>
+<a class="order"
+href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20memesan%20Kaos%20Pria%20atau%20Kemeja%20Pria."
+target="_blank">
 
-        <div class="price">
-          Rp40.000
-        </div>
+Pesan via WhatsApp
 
-        <a class="order"
-           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Baju%20Kaos%20Pria%20Rp40.000."
-           target="_blank">
-          💬 Pesan
-        </a>
+</a>
 
-      </div>
+</div>
 
-    </article>
+</article>
 
 
-    <!-- KEMEJA PRIA -->
-    <article class="card">
+<!-- ANAK -->
 
-      <div class="pic">
-        <img src="kemeja-pria.png"
-             alt="Kemeja Pria">
-      </div>
+<article class="card">
 
-      <div class="info">
+<div class="pic">
 
-        <div class="tag">
-          Pria
-        </div>
+<img src="assets/fashion-anak.jpg"
+alt="Baju Anak">
 
-        <h3>
-          Kemeja Pria
-        </h3>
+</div>
 
-        <div class="price">
-          Rp75.000
-        </div>
+<div class="info">
 
-        <a class="order"
-           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Kemeja%20Pria%20Rp75.000."
-           target="_blank">
-          💬 Pesan
-        </a>
+<div class="tag">
+Anak
+</div>
 
-      </div>
+<h3>
+Baju Anak Perempuan & Laki-laki
+</h3>
 
-    </article>
+<div class="price">
+Rp55.000 – Rp50.000
+</div>
 
+<a class="order"
+href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20memesan%20Baju%20Anak."
+target="_blank">
 
-    <!-- ANAK PEREMPUAN -->
-    <article class="card">
+Pesan via WhatsApp
 
-      <div class="pic">
-        <img src="anak-perempuan.png"
-             alt="Baju Anak Perempuan">
-      </div>
+</a>
 
-      <div class="info">
+</div>
 
-        <div class="tag">
-          Anak
-        </div>
+</article>
 
-        <h3>
-          Baju Anak Perempuan
-        </h3>
 
-        <div class="price">
-          Rp55.000
-        </div>
+<!-- JELBAB -->
 
-        <a class="order"
-           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Baju%20Anak%20Perempuan%20Rp55.000."
-           target="_blank">
-          💬 Pesan
-        </a>
+<article class="card">
 
-      </div>
+<div class="pic">
 
-    </article>
+<img src="assets/jelbab.png"
+alt="Jelbab Delisha Shop">
 
+</div>
 
-    <!-- ANAK LAKI-LAKI -->
-    <article class="card">
+<div class="info">
 
-      <div class="pic">
-        <img src="anak-laki-laki.png"
-             alt="Baju Anak Laki-Laki">
-      </div>
+<div class="tag">
+Wanita
+</div>
 
-      <div class="info">
+<h3>
+Jelbab
+</h3>
 
-        <div class="tag">
-          Anak
-        </div>
+<div class="price">
+Rp25.000
+</div>
 
-        <h3>
-          Baju Anak Laki-Laki
-        </h3>
+<a class="order"
+href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20memesan%20Jelbab%20Rp25.000."
+target="_blank">
 
-        <div class="price">
-          Rp50.000
-        </div>
+Pesan via WhatsApp
 
-        <a class="order"
-           href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20pesan%20Baju%20Anak%20Laki-Laki%20Rp50.000."
-           target="_blank">
-          💬 Pesan
-        </a>
+</a>
 
-      </div>
+</div>
 
-    </article>
+</article>
 
-
-  </div>
+</div>
 
 </section>
 
 
 <!-- TENTANG -->
+
 <section class="section about" id="tentang">
 
-  <div class="about-grid">
+<div class="about-grid">
 
-    <img src="koleksi-delisha.png"
-         alt="Delisha Shop">
+<img src="assets/koleksi-delisha.png"
+alt="Delisha Shop">
 
-    <div>
+<div>
 
-      <div class="eyebrow">
-        Tentang Delisha Shop
-      </div>
+<div class="eyebrow">
+Tentang Delisha Shop
+</div>
 
-      <h2>
-        Fashion Bersahabat Untuk Keluarga
-      </h2>
+<h2>
+Fashion Bersahabat Untuk Keluarga
+</h2>
 
-      <p>
-        Delisha Shop menyediakan pilihan fashion
-        wanita, pria dan anak serta jelbab.
-        Kami berusaha memberikan produk dengan
-        harga bersahabat dan pelayanan yang ramah.
-      </p>
+<p>
+Delisha Shop menyediakan pilihan fashion pria,
+wanita dan anak serta koleksi jelbab dengan
+harga bersahabat dan terjangkau.
+</p>
 
-      <div class="chips">
+<div class="chips">
 
-        <span class="chip">
-          Fashion Pria
-        </span>
+<span class="chip">Fashion Pria</span>
 
-        <span class="chip">
-          Fashion Wanita
-        </span>
+<span class="chip">Fashion Wanita</span>
 
-        <span class="chip">
-          Fashion Anak
-        </span>
+<span class="chip">Fashion Anak</span>
 
-        <span class="chip">
-          Jelbab
-        </span>
+<span class="chip">Jelbab</span>
 
-        <span class="chip">
-          Mulai 25K
-        </span>
+<span class="chip">Mulai 25K</span>
 
-      </div>
+</div>
 
-    </div>
+</div>
 
-  </div>
+</div>
+
+</section>
+
+
+<!-- FOTO KELUARGA -->
+
+<section class="section family" id="keluarga">
+
+<div class="section-head">
+
+<div class="eyebrow">
+Keluarga Delisha Shop
+</div>
+
+<h2>
+Salam Hangat dari Keluarga Kami
+</h2>
+
+<p>
+Terima kasih telah mendukung dan mempercayai
+Delisha Shop.
+</p>
+
+</div>
+
+<div class="family-photo">
+
+<img src="assets/foto-keluarga.png"
+alt="Keluarga Delisha Shop">
+
+</div>
+
+</section>
+
+
+<!-- PEMBAYARAN -->
+
+<section class="section payment" id="pembayaran">
+
+<div class="section-head">
+
+<div class="eyebrow">
+Pembayaran
+</div>
+
+<h2 class="payment-title">
+Pembayaran Delisha Shop
+</h2>
+
+<p>
+Silakan scan QR untuk melakukan pembayaran
+dengan mudah dan aman.
+</p>
+
+</div>
+
+<div class="qr-box">
+
+<img src="assets/qr-delisha.png"
+alt="QR Pembayaran Delisha Shop">
+
+</div>
+
+</section>
+
+
+<!-- DUKUNGAN -->
+
+<section class="section support" id="dukungan">
+
+<div class="section-head">
+
+<div class="eyebrow"
+style="color:#f3c36d">
+
+Dukung Delisha Shop
+
+</div>
+
+<h2>
+❤️ Berikan Dukungan Anda
+</h2>
+
+<p>
+Jika Anda menyukai Delisha Shop,
+silakan berikan Like dan Subscribe sebagai
+dukungan untuk kami.
+</p>
+
+
+<div class="support-buttons">
+
+
+<!-- LIKE -->
+
+<button
+class="support-btn like-btn"
+id="likeButton"
+onclick="beriLike()">
+
+❤️ Like <span id="likeText">0</span>
+
+</button>
+
+
+<!-- SUBSCRIBE -->
+
+<button
+class="support-btn subscribe-btn"
+id="subscribeButton"
+onclick="subscribe()">
+
+🔔 Subscribe / Dukung
+
+</button>
+
+
+</div>
+
+
+<div class="like-count">
+
+Terima kasih atas dukungan Anda ❤️
+
+</div>
+
+</div>
 
 </section>
 
 
 <!-- KONTAK -->
+
 <section class="section contact" id="kontak">
 
-  <div class="section-head">
+<div class="section-head">
 
-    <div class="eyebrow"
-         style="color:#f3c36d">
-      Hubungi Kami
-    </div>
+<div class="eyebrow"
+style="color:#f3c36d">
 
-    <h2>
-      Online dan Langsung
-    </h2>
+Hubungi Kami
 
-    <p>
-      Silakan hubungi Delisha Shop untuk
-      tanya stok, ukuran, warna dan pemesanan.
-    </p>
+</div>
 
+<h2>
+Online dan Langsung
+</h2>
 
-    <div class="social">
-
-      <!-- WHATSAPP 1 -->
-      <a href="https://wa.me/6282172762013"
-         target="_blank">
-        💬 WhatsApp 082172762013
-      </a>
+<p>
+Silakan hubungi Delisha Shop untuk tanya stok,
+ukuran, warna dan pemesanan.
+</p>
 
 
-      <!-- WHATSAPP 2 -->
-      <a href="https://wa.me/6283155431452"
-         target="_blank">
-        💬 WhatsApp 083155431452
-      </a>
+<div class="social">
+
+<a
+href="https://wa.me/6282172762013"
+target="_blank">
+
+💬 WhatsApp 082172762013
+
+</a>
 
 
-      <!-- INSTAGRAM -->
-      <a href="https://www.instagram.com/afdal_arafa/"
-         target="_blank">
-        📸 Instagram @afdal_arafa
-      </a>
+<a
+href="https://wa.me/6283155431452"
+target="_blank">
+
+💬 WhatsApp 083155431452
+
+</a>
 
 
-      <!-- TIKTOK -->
-      <a href="https://www.tiktok.com/@afdal.arafa"
-         target="_blank">
-        🎵 TikTok @afdal.arafa
-      </a>
+<a
+href="https://www.instagram.com/afdal_arafa/"
+target="_blank">
+
+📸 Instagram @afdal_arafa
+
+</a>
 
 
-      <!-- TIKTOK CICI -->
-      <a href="https://www.tiktok.com/search?q=cici.andriani"
-         target="_blank">
-        🎵 TikTok @cici.andriani
-      </a>
+<a
+href="https://www.tiktok.com/@afdal.arafa"
+target="_blank">
+
+🎵 TikTok @afdal.arafa
+
+</a>
 
 
-      <!-- FACEBOOK -->
-      <a href="https://www.facebook.com/share/1DU4Lg5MdB/"
-         target="_blank">
-        🔵 Facebook Afdal Arafa
-      </a>
+<a
+href="https://www.tiktok.com/search?q=cici.andriani"
+target="_blank">
 
-    </div>
+🎵 TikTok @cici.andriani
 
-  </div>
+</a>
+
+
+<a
+href="https://www.facebook.com/share/14n2MGZGQYB/"
+target="_blank">
+
+🔵 Facebook Afdal Arafa - Cici Andriani
+
+</a>
+
+</div>
+
+</div>
 
 </section>
+
 
 </main>
 
 
-<!-- FOOTER -->
 <footer>
-  © 2026 Delisha Shop •
-  Harga Bersahabat dan Terjangkau •
-  Online dan Langsung
+
+© 2026 Delisha Shop
+• Harga Bersahabat dan Terjangkau
+• Online dan Langsung
+
 </footer>
+
+
+<!-- WHATSAPP MELAYANG -->
+
+<a
+class="whatsapp"
+href="https://wa.me/6282172762013?text=Halo%20Delisha%20Shop,%20saya%20ingin%20bertanya%20tentang%20produk."
+target="_blank">
+
+💬 Chat WhatsApp
+
+</a>
+
+
+<!-- JAVASCRIPT LIKE & SUBSCRIBE -->
+
+<script>
+
+let jumlahLike =
+parseInt(localStorage.getItem("delishaLike") || "0");
+
+document.getElementById("likeText").innerText =
+jumlahLike;
+
+
+function beriLike(){
+
+jumlahLike++;
+
+localStorage.setItem(
+"delishaLike",
+jumlahLike
+);
+
+document.getElementById("likeText").innerText =
+jumlahLike;
+
+alert(
+"❤️ Terima kasih! Dukungan Anda sangat berarti untuk Delisha Shop."
+);
+
+}
+
+
+function subscribe(){
+
+const tombol =
+document.getElementById("subscribeButton");
+
+tombol.innerHTML =
+"✅ Sudah Mendukung";
+
+tombol.style.background =
+"#28a745";
+
+localStorage.setItem(
+"delishaSubscribe",
+"yes"
+);
+
+alert(
+"🔔 Terima kasih sudah mendukung Delisha Shop!"
+);
+
+}
+
+
+window.onload = function(){
+
+const sudahSubscribe =
+localStorage.getItem("delishaSubscribe");
+
+if(sudahSubscribe === "yes"){
+
+document.getElementById(
+"subscribeButton"
+).innerHTML =
+"✅ Sudah Mendukung";
+
+document.getElementById(
+"subscribeButton"
+).style.background =
+"#28a745";
+
+}
+
+};
+
+</script>
 
 </body>
 </html>
