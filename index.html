@@ -8,238 +8,1070 @@
   <title>Delisha Shop | Belanja Hemat, Tampil Keren!</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="topbar">
-    <a class="brand" href="#beranda" aria-label="Delisha Shop">
-      <img src="assets/logo-delisha.png" alt="Logo Delisha Shop">
-    </a>
-    <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
-    <nav id="navMenu">
-      <a href="#beranda">Beranda</a>
-      <a href="#produk">Produk</a>
-      <a href="#kategori">Kategori</a>
-      <a href="#pembayaran">Pembayaran</a>
-      <a href="#ulasan">Ulasan</a>
-      <a href="#kontak">Kontak</a>
-    </nav>
-  </header>
 
-  <main id="beranda">
-    <section class="hero">
-      <img src="assets/banner-delisha.png" alt="Banner Delisha Shop">
-      <div class="hero-overlay">
-        <span class="pill">DELI SHA SHOP</span>
-        <h1>Belanja Hemat, Tampil Keren!</h1>
-        <p>Pilihan fashion pria, wanita, hijab, dan anak dengan harga bersahabat.</p>
-        <a class="btn primary" href="#produk">Lihat Produk</a>
-      </div>
-    </section>
+<header class="topbar">
 
-    <section class="section intro">
-      <div>
-        <span class="eyebrow">DELISHA SHOP</span>
-        <h2>Fashion pilihan untuk keluarga</h2>
-        <p>Temukan koleksi terbaru Delisha Shop. Klik produk untuk memesan langsung melalui WhatsApp.</p>
-      </div>
-      <div class="stats">
-        <div><strong>6</strong><span>Kategori</span></div>
-        <div><strong>35K+</strong><span>Harga mulai</span></div>
-        <div><strong>WA</strong><span>Order cepat</span></div>
-      </div>
-    </section>
+  <a class="brand" href="#beranda" aria-label="Delisha Shop">
+    <img src="assets/logo-delisha.png" alt="Logo Delisha Shop">
+  </a>
 
-    <section class="section" id="kategori">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">PILIHAN KATEGORI</span>
-          <h2>Belanja sesuai kebutuhan</h2>
-        </div>
-      </div>
-      <div class="category-buttons">
-        <button class="filter active" data-filter="all">Semua</button>
-        <button class="filter" data-filter="pria">Pria</button>
-        <button class="filter" data-filter="wanita">Wanita</button>
-        <button class="filter" data-filter="anak">Anak</button>
-      </div>
-    </section>
+  <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
 
-    <section class="section" id="produk">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">KOLEKSI DELISHA</span>
-          <h2>Produk pilihan</h2>
-        </div>
-        <div class="shop-tools">
-          <input id="searchInput" type="search" placeholder="🔎 Cari produk..." aria-label="Cari produk">
-          <button class="cart-btn" id="cartBtn">🛒 Keranjang <b id="cartCount">0</b></button>
-        </div>
-      </div>
+  <nav id="navMenu">
+    <a href="#beranda">Beranda</a>
+    <a href="#produk">Produk</a>
+    <a href="#kategori">Kategori</a>
+    <a href="#pembayaran">Pembayaran</a>
+    <a href="#ulasan">Ulasan</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
 
-      <div class="product-grid">
-        <article class="product-card" data-category="pria" data-name="kaos pria">
-          <div class="product-img"><img src="assets/kaos-pria.png" alt="Kaos Pria"></div>
-          <div class="product-body">
-            <span class="tag">PRIA</span><h3>Kaos Pria</h3>
-            <p>Kaos premium nyaman dipakai, tersedia berbagai warna.</p>
-            <div class="product-bottom"><strong>Rp40.000 – Rp75.000</strong><button class="btn small add-cart" data-product="Kaos Pria" data-price="40000">+ Keranjang</button></div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="pria" data-name="kemeja pria">
-          <div class="product-img"><img src="assets/kemeja-pria.png" alt="Kemeja Pria"></div>
-          <div class="product-body">
-            <span class="tag">PRIA</span><h3>Kemeja Pria</h3>
-            <p>Kemeja kasual dengan pilihan warna yang mudah dipadukan.</p>
-            <div class="product-bottom"><strong>Rp40.000 – Rp75.000</strong><button class="btn small add-cart" data-product="Kemeja Pria" data-price="40000">+ Keranjang</button></div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="wanita" data-name="kaos wanita">
-          <div class="product-img"><img src="assets/kaos-wanita.png" alt="Kaos Wanita"></div>
-          <div class="product-body">
-            <span class="tag">WANITA</span><h3>Kaos Wanita</h3>
-            <p>Model simpel dan nyaman untuk aktivitas sehari-hari.</p>
-            <div class="product-bottom"><strong>Rp45.000 – Rp35.000</strong><button class="btn small add-cart" data-product="Kaos Wanita" data-price="35000">+ Keranjang</button></div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="wanita" data-name="hijab wanita">
-          <div class="product-img"><img src="assets/hijab.png" alt="Hijab Wanita"></div>
-          <div class="product-body">
-            <span class="tag">WANITA</span><h3>Hijab Wanita</h3>
-            <p>Bahan premium, lembut, dan tersedia dalam pilihan warna cantik.</p>
-            <div class="product-bottom"><strong>Rp45.000 – Rp35.000</strong><button class="btn small add-cart" data-product="Hijab Wanita" data-price="35000">+ Keranjang</button></div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="anak" data-name="baju anak perempuan">
-          <div class="product-img"><img src="assets/baju-anak-perempuan.png" alt="Baju Anak Perempuan"></div>
-          <div class="product-body">
-            <span class="tag">ANAK</span><h3>Baju Anak Perempuan</h3>
-            <p>Model manis dan ceria untuk si kecil.</p>
-            <div class="product-bottom"><strong>Rp50.000 – Rp45.000</strong><button class="btn small add-cart" data-product="Baju Anak Perempuan" data-price="45000">+ Keranjang</button></div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="anak" data-name="baju anak laki-laki">
-          <div class="product-img"><img src="assets/baju-anak-laki.png" alt="Baju Anak Laki-laki"></div>
-          <div class="product-body">
-            <span class="tag">ANAK</span><h3>Baju Anak Laki-laki</h3>
-            <p>Nyaman, aktif, dan cocok untuk gaya si kecil.</p>
-            <div class="product-bottom"><strong>Rp50.000 – Rp45.000</strong><button class="btn small add-cart" data-product="Baju Anak Laki-laki" data-price="45000">+ Keranjang</button></div>
-          </div>
-        </article>
-      </div>
-    </section>
+</header>
 
 
-    <section class="section reviews" id="ulasan">
-      <div class="section-head">
-        <div><span class="eyebrow">TESTIMONI PELANGGAN</span><h2>Bagikan pengalaman Anda</h2></div>
-      </div>
-      <div class="review-grid">
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“Produknya bagus dan proses pemesanan cepat.”</p>
-          <strong>Pelanggan Delisha</strong>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“Pilihan warna banyak, harganya juga bersahabat.”</p>
-          <strong>Pelanggan Delisha</strong>
-        </div>
-        <form class="review-form" id="reviewForm">
-          <h3>Tulis ulasan</h3>
-          <input id="reviewName" required placeholder="Nama Anda">
-          <select id="reviewRating" aria-label="Rating">
-            <option value="5">★★★★★ — Sangat puas</option>
-            <option value="4">★★★★☆ — Puas</option>
-            <option value="3">★★★☆☆ — Cukup</option>
-            <option value="2">★★☆☆☆ — Kurang</option>
-            <option value="1">★☆☆☆☆ — Tidak puas</option>
-          </select>
-          <textarea id="reviewText" required placeholder="Tulis pengalaman Anda..."></textarea>
-          <button class="btn" type="submit">Kirim Ulasan</button>
-        </form>
-      </div>
-      <div id="userReviews" class="user-reviews"></div>
-    </section>
+<main id="beranda">
 
-    <section class="section payment" id="pembayaran">
-      <div class="payment-card">
-        <div class="payment-copy">
-          <span class="eyebrow">PEMBAYARAN</span>
-          <h2>Scan QR untuk pembayaran</h2>
-          <p>Gunakan QR pembayaran yang tersedia pada gambar. Untuk konfirmasi atau pertanyaan, hubungi WhatsApp Delisha Shop.</p>
-          <div class="bank">
-            <strong>Transfer bank</strong>
-            <span>Bank Nagari: 7100220833776</span>
-            <span>Bank BRI: 858801020864506</span>
-            <small>A.N. Afdal arafa</small>
-          </div>
-        </div>
-        <div class="qr-wrap">
-          <img src="assets/qr-delisha.png" alt="QR pembayaran Delisha Shop">
-        </div>
-      </div>
-    </section>
+  <!-- BANNER -->
+  <section class="hero">
 
-    <section class="section social-proof">
-      <div class="engagement-card">
-        <div>
-          <span class="eyebrow">DUKUNG DELISHA SHOP</span>
-          <h2>Suka dengan produknya?</h2>
-          <p>Berikan Like dan Subscribe. Tombol di bawah menyimpan jumlah dukungan di perangkat pengunjung.</p>
-        </div>
-        <div class="engagement-actions">
-          <button class="engage like" id="likeBtn">♥ <span>LIKE</span> <b id="likeCount">0</b></button>
-          <button class="engage subscribe" id="subscribeBtn">🔔 <span>SUBSCRIBE</span> <b id="subCount">0</b></button>
-        </div>
-      </div>
-      <div class="monetize-note">
-        <strong>💰 Peluang penghasilan website</strong>
-        <p>Website ini sudah disiapkan dengan area promosi. Untuk penghasilan nyata, pasang Google AdSense setelah website memiliki domain, trafik, dan memenuhi kebijakan AdSense. Tombol Like/Subscribe sendiri tidak otomatis menghasilkan uang.</p>
-      </div>
-    </section>
+    <img
+      src="assets/banner-delisha.png"
+      alt="Banner Delisha Shop"
+    >
 
-    <section class="section contact" id="kontak">
-      <div class="section-head">
-        <div><span class="eyebrow">HUBUNGI KAMI</span><h2>Delisha Shop di media sosial</h2></div>
-      </div>
-      <div class="contact-grid">
-        <a class="social facebook" href="https://www.facebook.com/share/1Ej6K4ZdP2/" target="_blank" rel="noopener"><span>f</span><div><strong>Facebook</strong><small>Delisha Shop / Afdal arafa</small></div></a>
-        <a class="social facebook" href="https://www.facebook.com/share/1JXXKA8mqe/" target="_blank" rel="noopener"><span>f</span><div><strong>Facebook 2</strong><small>Halaman Facebook</small></div></a>
-        <a class="social instagram" href="https://www.instagram.com/afdal-arafa/" target="_blank" rel="noopener"><span>◎</span><div><strong>Instagram</strong><small>@afdal-arafa</small></div></a>
-        <a class="social tiktok" href="https://www.tiktok.com/@afdal.arafa" target="_blank" rel="noopener"><span>♪</span><div><strong>TikTok</strong><small>@afdal.arafa</small></div></a>
-        <a class="social tiktok" href="https://www.tiktok.com/@cici.andriani" target="_blank" rel="noopener"><span>♪</span><div><strong>TikTok</strong><small>@cici.andriani</small></div></a>
-        <a class="social whatsapp" href="https://wa.me/6282172762013" target="_blank" rel="noopener"><span>◉</span><div><strong>WhatsApp</strong><small>0821 7276 2013</small></div></a>
-        <a class="social whatsapp" href="https://wa.me/6283155431452" target="_blank" rel="noopener"><span>◉</span><div><strong>WhatsApp</strong><small>0831 5543 1452</small></div></a>
-      </div>
-    </section>
-  </main>
+    <div class="hero-overlay">
 
+      <span class="pill">
+        DELI SHA SHOP
+      </span>
 
-  <div class="modal" id="cartModal" aria-hidden="true">
-    <div class="modal-box">
-      <button class="modal-close" id="closeCart">×</button>
-      <span class="eyebrow">KERANJANG BELANJA</span>
-      <h2>Pesanan Anda</h2>
-      <div id="cartItems"></div>
-      <div class="cart-total">Total: <strong id="cartTotal">Rp0</strong></div>
-      <button class="btn checkout" id="checkoutBtn">💬 Checkout via WhatsApp</button>
-      <button class="clear-cart" id="clearCart">Kosongkan Keranjang</button>
+      <h1>
+        Belanja Hemat, Tampil Keren!
+      </h1>
+
+      <p>
+        Pilihan fashion pria, wanita, hijab, dan anak
+        dengan harga bersahabat.
+      </p>
+
+      <a class="btn primary" href="#produk">
+        Lihat Produk
+      </a>
+
     </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+  <section class="section intro">
+
+    <div>
+
+      <span class="eyebrow">
+        DELISHA SHOP
+      </span>
+
+      <h2>
+        Fashion pilihan untuk keluarga
+      </h2>
+
+      <p>
+        Temukan koleksi terbaru Delisha Shop.
+        Klik produk untuk memesan langsung melalui WhatsApp.
+      </p>
+
+    </div>
+
+
+    <div class="stats">
+
+      <div>
+        <strong>6</strong>
+        <span>Kategori</span>
+      </div>
+
+      <div>
+        <strong>35K+</strong>
+        <span>Harga mulai</span>
+      </div>
+
+      <div>
+        <strong>WA</strong>
+        <span>Order cepat</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- KATEGORI -->
+  <section class="section" id="kategori">
+
+    <div class="section-head">
+
+      <div>
+
+        <span class="eyebrow">
+          PILIHAN KATEGORI
+        </span>
+
+        <h2>
+          Belanja sesuai kebutuhan
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="category-buttons">
+
+      <button
+        class="filter active"
+        data-filter="all">
+        Semua
+      </button>
+
+      <button
+        class="filter"
+        data-filter="pria">
+        Pria
+      </button>
+
+      <button
+        class="filter"
+        data-filter="wanita">
+        Wanita
+      </button>
+
+      <button
+        class="filter"
+        data-filter="anak">
+        Anak
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUK -->
+  <section class="section" id="produk">
+
+    <div class="section-head">
+
+      <div>
+
+        <span class="eyebrow">
+          KOLEKSI DELISHA
+        </span>
+
+        <h2>
+          Produk pilihan
+        </h2>
+
+      </div>
+
+
+      <div class="shop-tools">
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="🔎 Cari produk..."
+          aria-label="Cari produk"
+        >
+
+        <button
+          class="cart-btn"
+          id="cartBtn">
+
+          🛒 Keranjang
+
+          <b id="cartCount">
+            0
+          </b>
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+      <!-- KAOS PRIA -->
+      <article
+        class="product-card"
+        data-category="pria"
+        data-name="kaos pria">
+
+        <div class="product-img">
+
+          <img
+            src="assets/kaos-pria.png"
+            alt="Kaos Pria">
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="tag">
+            PRIA
+          </span>
+
+          <h3>
+            Kaos Pria
+          </h3>
+
+          <p>
+            Kaos premium nyaman dipakai,
+            tersedia berbagai warna.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong>
+              Rp40.000 – Rp75.000
+            </strong>
+
+            <button
+              class="btn small add-cart"
+              data-product="Kaos Pria"
+              data-price="40000">
+
+              + Keranjang
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- KEMEJA PRIA -->
+      <article
+        class="product-card"
+        data-category="pria"
+        data-name="kemeja pria">
+
+        <div class="product-img">
+
+          <img
+            src="assets/kemeja-pria.png"
+            alt="Kemeja Pria">
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="tag">
+            PRIA
+          </span>
+
+          <h3>
+            Kemeja Pria
+          </h3>
+
+          <p>
+            Kemeja kasual dengan pilihan
+            warna yang mudah dipadukan.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong>
+              Rp40.000 – Rp75.000
+            </strong>
+
+            <button
+              class="btn small add-cart"
+              data-product="Kemeja Pria"
+              data-price="40000">
+
+              + Keranjang
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- KAOS WANITA -->
+      <article
+        class="product-card"
+        data-category="wanita"
+        data-name="kaos wanita">
+
+        <div class="product-img">
+
+          <img
+            src="assets/kaos-wanita.png"
+            alt="Kaos Wanita">
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="tag">
+            WANITA
+          </span>
+
+          <h3>
+            Kaos Wanita
+          </h3>
+
+          <p>
+            Model simpel dan nyaman
+            untuk aktivitas sehari-hari.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong>
+              Rp45.000 – Rp35.000
+            </strong>
+
+            <button
+              class="btn small add-cart"
+              data-product="Kaos Wanita"
+              data-price="35000">
+
+              + Keranjang
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- HIJAB -->
+      <article
+        class="product-card"
+        data-category="wanita"
+        data-name="hijab wanita">
+
+        <div class="product-img">
+
+          <img
+            src="assets/hijab.png"
+            alt="Hijab Wanita">
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="tag">
+            WANITA
+          </span>
+
+          <h3>
+            Hijab Wanita
+          </h3>
+
+          <p>
+            Bahan premium, lembut,
+            dan tersedia dalam pilihan warna cantik.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong>
+              Rp45.000 – Rp35.000
+            </strong>
+
+            <button
+              class="btn small add-cart"
+              data-product="Hijab Wanita"
+              data-price="35000">
+
+              + Keranjang
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- BAJU ANAK PEREMPUAN -->
+      <article
+        class="product-card"
+        data-category="anak"
+        data-name="baju anak perempuan">
+
+        <div class="product-img">
+
+          <img
+            src="assets/baju-anak-perempuan.png"
+            alt="Baju Anak Perempuan">
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="tag">
+            ANAK
+          </span>
+
+          <h3>
+            Baju Anak Perempuan
+          </h3>
+
+          <p>
+            Model manis dan ceria
+            untuk si kecil.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong>
+              Rp50.000 – Rp45.000
+            </strong>
+
+            <button
+              class="btn small add-cart"
+              data-product="Baju Anak Perempuan"
+              data-price="45000">
+
+              + Keranjang
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- BAJU ANAK LAKI-LAKI -->
+      <article
+        class="product-card"
+        data-category="anak"
+        data-name="baju anak laki-laki">
+
+        <div class="product-img">
+
+          <img
+            src="assets/baju-anak-laki.png"
+            alt="Baju Anak Laki-laki">
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="tag">
+            ANAK
+          </span>
+
+          <h3>
+            Baju Anak Laki-laki
+          </h3>
+
+          <p>
+            Nyaman, aktif, dan cocok
+            untuk gaya si kecil.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong>
+              Rp50.000 – Rp45.000
+            </strong>
+
+            <button
+              class="btn small add-cart"
+              data-product="Baju Anak Laki-laki"
+              data-price="45000">
+
+              + Keranjang
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- ULASAN -->
+  <section
+    class="section reviews"
+    id="ulasan">
+
+    <div class="section-head">
+
+      <div>
+
+        <span class="eyebrow">
+          TESTIMONI PELANGGAN
+        </span>
+
+        <h2>
+          Bagikan pengalaman Anda
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="review-grid">
+
+
+      <div class="review-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          “Produknya bagus dan proses pemesanan cepat.”
+        </p>
+
+        <strong>
+          Pelanggan Delisha
+        </strong>
+
+      </div>
+
+
+      <div class="review-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          “Pilihan warna banyak, harganya juga bersahabat.”
+        </p>
+
+        <strong>
+          Pelanggan Delisha
+        </strong>
+
+      </div>
+
+
+      <form
+        class="review-form"
+        id="reviewForm">
+
+        <h3>
+          Tulis ulasan
+        </h3>
+
+        <input
+          id="reviewName"
+          required
+          placeholder="Nama Anda">
+
+        <select
+          id="reviewRating"
+          aria-label="Rating">
+
+          <option value="5">
+            ★★★★★ — Sangat puas
+          </option>
+
+          <option value="4">
+            ★★★★☆ — Puas
+          </option>
+
+          <option value="3">
+            ★★★☆☆ — Cukup
+          </option>
+
+          <option value="2">
+            ★★☆☆☆ — Kurang
+          </option>
+
+          <option value="1">
+            ★☆☆☆☆ — Tidak puas
+          </option>
+
+        </select>
+
+        <textarea
+          id="reviewText"
+          required
+          placeholder="Tulis pengalaman Anda...">
+        </textarea>
+
+        <button
+          class="btn"
+          type="submit">
+
+          Kirim Ulasan
+
+        </button>
+
+      </form>
+
+    </div>
+
+
+    <div
+      id="userReviews"
+      class="user-reviews">
+    </div>
+
+  </section>
+
+
+  <!-- PEMBAYARAN -->
+  <section
+    class="section payment"
+    id="pembayaran">
+
+    <div class="payment-card">
+
+      <div class="payment-copy">
+
+        <span class="eyebrow">
+          PEMBAYARAN
+        </span>
+
+        <h2>
+          Scan QR untuk pembayaran
+        </h2>
+
+        <p>
+          Gunakan QR pembayaran yang tersedia
+          pada gambar. Untuk konfirmasi atau pertanyaan,
+          hubungi WhatsApp Delisha Shop.
+        </p>
+
+
+        <div class="bank">
+
+          <strong>
+            Transfer bank
+          </strong>
+
+          <span>
+            Bank Nagari: 7100220833776
+          </span>
+
+          <span>
+            Bank BRI: 858801020864506
+          </span>
+
+          <small>
+            A.N. Afdal arafa
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <div class="qr-wrap">
+
+        <img
+          src="assets/qr-delisha.png"
+          alt="QR pembayaran Delisha Shop">
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LIKE SUBSCRIBE -->
+  <section class="section social-proof">
+
+    <div class="engagement-card">
+
+      <div>
+
+        <span class="eyebrow">
+          DUKUNG DELISHA SHOP
+        </span>
+
+        <h2>
+          Suka dengan produknya?
+        </h2>
+
+        <p>
+          Berikan Like dan Subscribe.
+          Tombol di bawah menyimpan jumlah dukungan
+          di perangkat pengunjung.
+        </p>
+
+      </div>
+
+
+      <div class="engagement-actions">
+
+        <button
+          class="engage like"
+          id="likeBtn">
+
+          ♥
+          <span>LIKE</span>
+          <b id="likeCount">0</b>
+
+        </button>
+
+
+        <button
+          class="engage subscribe"
+          id="subscribeBtn">
+
+          🔔
+          <span>SUBSCRIBE</span>
+          <b id="subCount">0</b>
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="monetize-note">
+
+      <strong>
+        💰 Peluang penghasilan website
+      </strong>
+
+      <p>
+        Website ini sudah disiapkan dengan area promosi.
+        Untuk penghasilan nyata, pasang Google AdSense
+        setelah website memiliki domain, trafik,
+        dan memenuhi kebijakan AdSense.
+        Tombol Like/Subscribe sendiri tidak otomatis
+        menghasilkan uang.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- KONTAK -->
+  <section
+    class="section contact"
+    id="kontak">
+
+    <div class="section-head">
+
+      <div>
+
+        <span class="eyebrow">
+          HUBUNGI KAMI
+        </span>
+
+        <h2>
+          Delisha Shop di media sosial
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <a
+        class="social facebook"
+        href="https://www.facebook.com/share/1Ej6K4ZdP2/"
+        target="_blank"
+        rel="noopener">
+
+        <span>f</span>
+
+        <div>
+
+          <strong>
+            Facebook
+          </strong>
+
+          <small>
+            Delisha Shop / Afdal arafa
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <a
+        class="social facebook"
+        href="https://www.facebook.com/share/1JXXKA8mqe/"
+        target="_blank"
+        rel="noopener">
+
+        <span>f</span>
+
+        <div>
+
+          <strong>
+            Facebook 2
+          </strong>
+
+          <small>
+            Halaman Facebook
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <a
+        class="social instagram"
+        href="https://www.instagram.com/afdal-arafa/"
+        target="_blank"
+        rel="noopener">
+
+        <span>◎</span>
+
+        <div>
+
+          <strong>
+            Instagram
+          </strong>
+
+          <small>
+            @afdal-arafa
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <a
+        class="social tiktok"
+        href="https://www.tiktok.com/@afdal.arafa"
+        target="_blank"
+        rel="noopener">
+
+        <span>♪</span>
+
+        <div>
+
+          <strong>
+            TikTok
+          </strong>
+
+          <small>
+            @afdal.arafa
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <a
+        class="social tiktok"
+        href="https://www.tiktok.com/@cici.andriani"
+        target="_blank"
+        rel="noopener">
+
+        <span>♪</span>
+
+        <div>
+
+          <strong>
+            TikTok
+          </strong>
+
+          <small>
+            @cici.andriani
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <a
+        class="social whatsapp"
+        href="https://wa.me/6282172762013"
+        target="_blank"
+        rel="noopener">
+
+        <span>◉</span>
+
+        <div>
+
+          <strong>
+            WhatsApp
+          </strong>
+
+          <small>
+            0821 7276 2013
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <a
+        class="social whatsapp"
+        href="https://wa.me/6283155431452"
+        target="_blank"
+        rel="noopener">
+
+        <span>◉</span>
+
+        <div>
+
+          <strong>
+            WhatsApp
+          </strong>
+
+          <small>
+            0831 5543 1452
+          </small>
+
+        </div>
+
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- MODAL KERANJANG -->
+<div
+  class="modal"
+  id="cartModal"
+  aria-hidden="true">
+
+  <div class="modal-box">
+
+    <button
+      class="modal-close"
+      id="closeCart">
+
+      ×
+
+    </button>
+
+    <span class="eyebrow">
+      KERANJANG BELANJA
+    </span>
+
+    <h2>
+      Pesanan Anda
+    </h2>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+
+      Total:
+
+      <strong id="cartTotal">
+        Rp0
+      </strong>
+
+    </div>
+
+    <button
+      class="btn checkout"
+      id="checkoutBtn">
+
+      💬 Checkout via WhatsApp
+
+    </button>
+
+    <button
+      class="clear-cart"
+      id="clearCart">
+
+      Kosongkan Keranjang
+
+    </button>
+
   </div>
 
-  <footer>
-    <div class="footer-brand">
-      <img src="assets/logo-delisha.png" alt="Delisha Shop">
-      <div><strong>Delisha Shop</strong><span>Belanja hemat, kualitas bersahabat.</span></div>
-    </div>
-    <p>© <span id="year"></span> Delisha Shop. Semua hak dilindungi.</p>
-  </footer>
+</div>
 
-  <a class="floating-wa" href="https://wa.me/6282172762013" target="_blank" rel="noopener" aria-label="Chat WhatsApp">◉ <span>Chat WhatsApp</span></a>
-  <script src="script.js"></script>
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="footer-brand">
+
+    <img
+      src="assets/logo-delisha.png"
+      alt="Delisha Shop">
+
+    <div>
+
+      <strong>
+        Delisha Shop
+      </strong>
+
+      <span>
+        Belanja hemat, kualitas bersahabat.
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <p>
+    © <span id="year"></span>
+    Delisha Shop.
+    Semua hak dilindungi.
+  </p>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+<a
+  class="floating-wa"
+  href="https://wa.me/6282172762013"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat WhatsApp">
+
+  ◉
+  <span>
+    Chat WhatsApp
+  </span>
+
+</a>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
